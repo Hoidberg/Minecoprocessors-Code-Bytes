@@ -13,6 +13,6 @@ jmp start
 false:
 mov pf, 0x00
 jmp start
-compare:
+compare:	; Prevent it from looping
 jz true
 jmp false
